@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product Registration</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html"><h1>Welcome to Product Registration Page</h1></a>
+                <a href="CartServlet">Products List</a>
+            </nav>
+        </header>
+        <div>
+            <form class="f" action="ProductRegistration" method="post">
+                <p>
+                    <label for="prID">Product ID: </label>
+                    <input type="number" name="prID" id="prID" placeholder="Enter Product ID" required><br>
+                </p>
+                <p>
+                    <label for="prName">Product Name: </label>
+                    <input type="text" name="prName" id="prName" placeholder="Enter Product Name" required><br> 
+                </p >
+                <p  >
+                    <label for="ProductCategory">Category:</label>
+                    <select id="ProductCategory" name="ProductCategory" required>
+                        <option value="Computers_Tablets">Computers and Tablets</option>
+                        <option value="Appliances">Appliances</option>
+                        <option value="Toys_Games_Collectibles">Toys, Games and Collectibles</option>
+                    </select><br>
+                </p>
+                <p  >
+                    <label for="prPrice">Product Price: </label>
+                    <input type="number" step="0.01" name="prPrice" id="prPrice" placeholder="Enter Product Price" required><br>
+                </p>
+                <input class="submit" name="Register" type="submit" value="Register Product">
+            </form>
+        </div>
+        <div  class="s">
+            <form action="CartServlet" method="post">
+                <p>
+                    <label for="prNamesr">Search for Product:</label>
+                    <input type="number" name="prNamesr" id="prNamesr" placeholder="Enter Product ID" required><br> 
+                </p >
+                <input class="submit" name="Search" type="submit" value="Search">
+            </form>
+        </div>
+    </body>
+</html>

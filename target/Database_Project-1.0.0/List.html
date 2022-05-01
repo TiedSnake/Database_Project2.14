@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Products List</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+
+            <nav>
+                <a href="CartServlet"><h1>Products List</h1></a>
+                <a href="index.html">Product Registration</a>
+            </nav>
+        </header>
+        <table>
+            <tr>
+                <th colspan="7"><h3>Product Details</h3></th>
+            </tr>
+            <tr>
+                <th>Product Unique ID</th>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Product Price</th>
+                <th>Product Registration Date</th>
+            </tr>
+            <!--Begin-->
+        </table>
+        <form action="CartServlet" class="b" method="post">
+            <input type="submit" name="clear" value="Clear List">
+        </form>
+        <div  class="s">
+            <form action="CartServlet" method="post">
+                <p>
+                    <label for="prNamesr">Search for Product:</label>
+                    <input type="number" name="prNamesr" id="prNamesr" placeholder="Enter Product ID" required><br> 
+                </p >
+                <input class="submit" name="Search" type="submit" value="Search">
+            </form>
+        </div>
+    </body>
+</html>
+<!--end-->
